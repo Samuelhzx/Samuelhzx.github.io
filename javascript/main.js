@@ -1,5 +1,5 @@
 let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+myHeading.textContent = 'Hi there!';
 
 /*
 document.querySelector("html").addEventListener("click", function () {
@@ -24,6 +24,8 @@ const para = document.querySelector('p');
 para.addEventListener('click', updateName);
 
 function updateName() {
-  let name = prompt('输入名字：');
-  para.textContent = '你好，' + name;
+    let name = prompt('输入名字：');
+    if (name !== null) {
+        para.textContent = '你好，' + name;
+    }
 }
