@@ -26,9 +26,9 @@ para.addEventListener('click', updateName);
 function updateName() {
     let name = prompt('输入名字：');
     if (name == "") {
-        para.textContent = '你好，无名人士';
+        para.textContent = '无名大侠';
     }
     else if (name !== null) {
-        para.textContent = '你好，' + name;
+        para.textContent = name;
     }
 }
