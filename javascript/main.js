@@ -1,12 +1,6 @@
 let myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hi there!';
 
-/*
-document.querySelector("html").addEventListener("click", function () {
-    alert("别点");
-});
-*/
-
 let myImage = document.querySelector('img');
 
 myImage.onclick = function () {
@@ -19,7 +13,7 @@ myImage.onclick = function () {
         myImage.setAttribute('src', '../images/ou.svg');
     }
 }
-const para = document.querySelector('p');
+const para = document.getElementById("name");
 
 para.addEventListener('click', updateName);
 
