@@ -1,10 +1,10 @@
 @font-face {
-	font-family: "chu";
-	src: url("../fonts/chu.ttf");
+	font-family: "yan";
+	src: url("../颜真卿颜体.ttf");
 }
 
 p,li{
-	font-family: "georgia","chu";
+	font-family: "georgia","yan";
 }
 
 p {

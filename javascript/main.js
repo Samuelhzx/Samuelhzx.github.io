@@ -1,7 +1,9 @@
-let myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hi there!';
+/*h1
+let myHeading = document.getElementById("title");
+myHeading.textContent = 'Hi there!';*/
 
-let myImage = document.querySelector('img');
+//img
+let myImage = document.getElementById("huang-img");
 
 myImage.onclick = function () {
     let mySrc = myImage.getAttribute('src');
@@ -13,6 +15,8 @@ myImage.onclick = function () {
         myImage.setAttribute('src', '../images/ou.svg');
     }
 }
+
+//name
 const para = document.getElementById("name");
 
 para.addEventListener('click', updateName);
