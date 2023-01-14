@@ -1,7 +1,3 @@
-/*h1
-let myHeading = document.getElementById("title");
-myHeading.textContent = 'Hi there!';*/
-
 //img
 let myImage = document.getElementById("huang-img");
 
@@ -29,4 +25,13 @@ function updateName() {
     else if (name !== null) {
         para.textContent = name;
     }
+}
+
+function changecolor(id) {
+    const getin = document.getElementById(id);
+    getin.style.background = "rgba(0, 256, 256, 0.3)";
+}
+function changeback(id) {
+    const getin = document.getElementById(id);
+    getin.style.background = "rgba(0, 0, 200, 0.3)";
 }
