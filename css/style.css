@@ -19,6 +19,7 @@ p {
 	padding: 3px 10px;
 	display: inline-block;
 	cursor: pointer;
+	color: black;
 }
 
 html {
