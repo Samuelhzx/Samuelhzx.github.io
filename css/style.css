@@ -3,11 +3,14 @@
 	src: url("../颜真卿颜体.ttf");
 }
 
-p,li,button{
-	font-family: "georgia","yan";
+p,
+li,
+button {
+	font-family: "georgia", "yan";
 }
 
-p,button {
+p,
+button {
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
 	text-align: center;
@@ -16,11 +19,13 @@ p,button {
 	/*color: rgba(0, 0, 200, 0.6);*/
 	box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
 	border-radius: 10px;
-	padding: 3px 10px;/*字和框的间距*/
+	padding: 3px 10px;
+	/*字和框的间距*/
 	display: inline-block;
 	cursor: pointer;
 	color: black;
 	font-size: 30px;
+	transition: all 0.2s;
 }
 
 html {
@@ -57,4 +62,10 @@ li {
 	/* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
 	line-height: 2;
 	letter-spacing: 1px;
+}
+
+p:hover,
+button:hover {
+	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
+	background: rgba(0, 256, 256, 0.3);
 }
