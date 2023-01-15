@@ -1,21 +1,3 @@
-@font-face {
-	font-family: "yan";
-	src: url("../颜真卿颜体.ttf");
-}
-
-html{
-	font-family: "georgia","yan";
-    background-color: #00559f;
-}
-
-body {
-    width: 50%;
-	margin: 0 auto;
-	background-color: #FF9500;
-	padding: 0 20px 20px 20px;
-	border: 3px solid black;
-}
-
 .form input[type="number"] {
     width: 200px;
 }
@@ -23,4 +5,33 @@ body {
 .lastResult {
     color: black;
     padding: 3px;
+}
+
+.guessSubmit,
+.guessField {
+	font-family: "georgia","yan";
+	/*text-align: center;*/
+	border: 2px solid rgba(0, 0, 200, 0.6);
+	background: rgba(0, 0, 200, 0.3);
+	/*color: rgba(0, 0, 200, 0.6);*/
+	box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+	border-radius: 10px;
+	padding: 3px 10px;
+	/*字和框的间距*/
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	/*font-size: 30px;*/
+	transition: all 0.2s;
+	font-size: 30px;
+}
+
+.guessSubmit:hover {
+	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
+	background: rgba(0, 256, 256, 0.3);
+}
+
+h2{
+	font-family: "georgia","yan";
+	font-size: 50px;
 }
