@@ -12,5 +12,14 @@ li {
 }
 
 .copyright {
-	bottom: 0%;
+	text-align: center;
+	font-size: 5px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	/*height: 60px;*/
+	font-size: 30px;
+	/*background-color: #eee;*/
+	z-index: 9999;
 }

@@ -9,7 +9,7 @@
 
 .guessSubmit,
 .guessField {
-	font-family: "georgia", "yan";
+	/*font-family: "georgia", "yan";*/
 	/*text-align: center;*/
 	border: 2px solid rgba(0, 0, 200, 0.6);
 	background: rgba(0, 0, 200, 0.3);
@@ -24,6 +24,10 @@
 	/*font-size: 30px;*/
 	transition: all 0.2s;
 	font-size: 30px;
+}
+
+.guessSubmit {
+	font-family: "georgia", "yan";
 }
 
 .guessSubmit:hover {
