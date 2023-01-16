@@ -1,15 +1,15 @@
 .form input[type="number"] {
-    width: 200px;
+	width: 200px;
 }
 
 .lastResult {
-    color: black;
-    padding: 3px;
+	color: black;
+	padding: 3px;
 }
 
 .guessSubmit,
 .guessField {
-	font-family: "georgia","yan";
+	font-family: "georgia", "yan";
 	/*text-align: center;*/
 	border: 2px solid rgba(0, 0, 200, 0.6);
 	background: rgba(0, 0, 200, 0.3);
