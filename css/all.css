@@ -8,7 +8,6 @@ button:hover {
 	src: url("../颜真卿颜体.ttf");
 }
 
-li,
 button {
 	font-family: "georgia", "yan";
 }
@@ -33,7 +32,7 @@ button {
 
 html {
 	/* px 表示“像素（pixels）”: 基础字号为 10 像素 */
-	font-size: 30px;
+	font-size: 20px;
 	background-color: #00559f;
 }
 
@@ -62,6 +61,6 @@ img {
 }
 
 h2 {
-	font-family: "georgia", "yan";
+	font-family: Arial, "yan";
 	font-size: 50px;
 }

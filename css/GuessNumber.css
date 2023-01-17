@@ -4,12 +4,12 @@
 
 .lastResult {
 	color: black;
-	padding: 3px;
+	padding: 3px 3px;
+	border-radius: 5px;
 }
 
 .guessSubmit,
 .guessField {
-	/*font-family: "georgia", "yan";*/
 	/*text-align: center;*/
 	border: 2px solid rgba(0, 0, 200, 0.6);
 	background: rgba(0, 0, 200, 0.3);
@@ -21,9 +21,8 @@
 	display: inline-block;
 	cursor: pointer;
 	color: black;
-	/*font-size: 30px;*/
 	transition: all 0.2s;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .guessSubmit {

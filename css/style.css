@@ -13,13 +13,9 @@ li {
 
 .copyright {
 	text-align: center;
-	font-size: 5px;
+	font-size: 1%;/*这里有bug*/
 	position: fixed;
 	left: 0px;
-	bottom: 0px;
+	bottom: 3px;
 	width: 100%;
-	/*height: 60px;*/
-	font-size: 30px;
-	/*background-color: #eee;*/
-	z-index: 9999;
 }
