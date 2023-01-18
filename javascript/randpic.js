@@ -27,7 +27,7 @@ function reply() {
 	} else if (writed[0] === '压缩毛巾') {
 
 		if (writed.length !== 3) {
-			replytext.textContent = '用法：压缩毛巾 名称 不是什么。如: 压缩毛巾 压缩毛巾 饼干';
+			replytext.textContent = '用法：压缩毛巾 名称 不是什么。如: 压缩毛巾 饼干 压缩毛巾';
 
 		} else {
 			replytext.textContent = '什么，这不是' +writed[1]+ '，我们这个'+writed[2]+'体积小方便携带，拆开一包，放水里就变大，\
