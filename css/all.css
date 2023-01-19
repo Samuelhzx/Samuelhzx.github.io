@@ -1,6 +1,6 @@
 button:hover {
 	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
-	background: rgba(0, 256, 256, 0.3);
+	background: rgba(0, 256, 256, 0.5);
 }
 
 @font-face {
@@ -50,7 +50,7 @@ h1 {
 	padding: 20px 0;
 	color: #00539F;
 	text-shadow: 3px 3px 3px black;
-	font-size: 80px;
+	font-size: 70px;
 	text-align: center;
 }
 
