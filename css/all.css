@@ -33,7 +33,7 @@ button {
 html {
 	/* px 表示“像素（pixels）”: 基础字号为 10 像素 */
 	font-size: 20px;
-	background-color: #00559f;
+	background-color: #00539f;
 }
 
 body {
@@ -50,7 +50,7 @@ h1 {
 	padding: 20px 0;
 	color: #00539F;
 	text-shadow: 3px 3px 3px black;
-	font-size: 70px;
+	font-size: 80px;
 	text-align: center;
 }
 
