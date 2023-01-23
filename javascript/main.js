@@ -13,23 +13,8 @@ myImage.onclick = function () {
 }
 
 //name,denglu
-const namebutton = document.getElementById("name");
-const title = document.getElementById('title');
-namebutton.addEventListener('click', updateName);
-
-function updateName() {
-	let name = prompt('输入昵称：(温馨提示：目前无法注销)');
-	if (name == "") {
-		name = '无名大侠';
-	}
-	if (name !== null) {
-		namebutton.textContent = name;
-		localStorage.setItem('name', name);
-		title.textContent = 'hello, ' + name;
-	}
-}
-
 if (localStorage.getItem('name')) {
+	const title = document.getElementById('title');
 	let storedName = localStorage.getItem('name');
 	title.textContent = '欢迎回来，' + storedName;
 	namebutton.textContent = storedName;
