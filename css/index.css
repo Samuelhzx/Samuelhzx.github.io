@@ -13,7 +13,8 @@ li {
 
 .copyright {
 	text-align: center;
-	font-size: 1%;/*这里有bug*/
+	font-size: 1%;
+	/*这里有bug*/
 	position: fixed;
 	left: 0px;
 	bottom: 3px;
@@ -33,7 +34,19 @@ li {
 	transition: all 0.35s;
 }
 
+#github {
+	position: fixed;
+	left: 3px;
+	top: 3px;
+}
+
 #name:hover {
 	box-shadow: 3px 3px 5px rgb(0, 0, 50);
 	background: #FF9500;
+}
+
+#getin {
+	display: block;
+	margin: 0 auto;
+	font-size: 40px;
 }

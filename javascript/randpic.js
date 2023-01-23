@@ -50,7 +50,9 @@ function reply() {
 			非常惊讶。这就是关于'+writed[1]+writed[2]+'的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦！';
 		}
 
+	} else if (writed[0] === '兔年大吉') {
+		location.href='../html/nggyu.html'
 	} else {
-		replytext.textContent = '功能：\narticle\n压缩毛巾\n小编体\n(randpic还没实现)';
+		replytext.textContent = '功能：\narticle\n压缩毛巾\n小编体\n兔年大吉\n(randpic还没实现)';
 	}
 }
