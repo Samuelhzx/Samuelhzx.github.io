@@ -1,6 +1,9 @@
 const namebutton = document.getElementById("name");
 const title = document.getElementById('title');
 const htmltitle = document.querySelector('title');
+const removename = document.getElementById('removename');
+
+htmltitle.textContent = '个人主页';
 
 namebutton.addEventListener('click', updateName);
 
@@ -12,12 +15,23 @@ function updateName() {
 	if (name !== null) {
 		localStorage.setItem('name', name);
 		title.textContent = name;
-        htmltitle.textContent = name+'的个人主页';
+		htmltitle.textContent = name + '的个人主页';
 	}
 }
 
 if (localStorage.getItem('name')) {
 	let storedName = localStorage.getItem('name');
 	title.textContent = storedName;
-    htmltitle.textContent = storedName+'的个人主页';
+	htmltitle.textContent = storedName + '的个人主页';
+}
+
+removename.addEventListener('click', removeName);
+
+function removeName() {
+	const ask = confirm('确定注销？')
+	if (ask) {
+		localStorage.removeItem('name');
+		title.textContent = '无名大侠';
+		htmltitle.textContent = '个人主页';
+	}
 }

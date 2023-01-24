@@ -5,7 +5,7 @@ button:hover {
 
 @font-face {
 	font-family: "yan";
-	src: url("../颜真卿颜体.ttf");
+	src: url("../fonts/颜真卿颜体.ttf");
 }
 
 button {
@@ -79,10 +79,10 @@ input {
 
 input[type='submit'] {
 	cursor: pointer;
-	font-family: Arial, "yan";
+	font-family: "georgia", "yan";
 }
 
 input[type='submit']:hover {
 	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
-	background: rgba(0, 256, 256, 0.3);
+	background: rgba(0, 256, 256, 0.5);
 }
