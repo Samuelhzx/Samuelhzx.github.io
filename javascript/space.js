@@ -8,7 +8,7 @@ htmltitle.textContent = '个人主页';
 namebutton.addEventListener('click', updateName);
 
 function updateName() {
-	let name = prompt('输入昵称：(温馨提示：目前无法注销)');
+	let name = prompt('输入昵称：');
 	if (name == "") {
 		name = '无名大侠';
 	}

@@ -15,16 +15,7 @@ function reply() {
 		}
 	}
 
-	if (writed[0] === 'article') {
-
-		if (writed.length !== 2) {
-			replytext.textContent = '用法：article <人物名>';
-		} else {
-			replytext.textContent = '有一天，bai和' + writed[1] +
-				'一起出去散步。他们度过了愉快的一天，而且没有得新冠，真幸运！';
-		}
-
-	} else if (writed[0] === '压缩毛巾') {
+	if (writed[0] === '压缩毛巾') {
 
 		if (writed.length !== 3) {
 			replytext.textContent = '用法：压缩毛巾 名称 不是什么。如: 压缩毛巾 饼干 压缩毛巾';
@@ -53,6 +44,6 @@ function reply() {
 	} else if (writed[0] === '兔年大吉') {
 		location.href='../html/nggyu.html'
 	} else {
-		replytext.textContent = '功能：\narticle\n压缩毛巾\n小编体\n兔年大吉\n(randpic还没实现)';
+		replytext.textContent = '功能：\n压缩毛巾\n小编体\n兔年大吉\n(randpic还没实现)';
 	}
 }

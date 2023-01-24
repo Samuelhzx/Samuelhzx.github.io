@@ -1,2 +1,2 @@
 # [Samuelhzx.github.io](https://samuelhzx.github.io/)
-目前正在调试阶段，长得奇怪的地方敬请谅解
+今年元旦的时候开始自学前端，本网站目前用来测试
