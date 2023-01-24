@@ -1,18 +1,48 @@
-button:hover {
-	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
-	background: rgba(0, 256, 256, 0.5);
-}
-
 @font-face {
 	font-family: "yan";
 	src: url("../fonts/颜真卿颜体.ttf");
 }
 
-button {
-	font-family: "georgia", "yan";
+@font-face {
+	font-family: "consolas";
+	src: url("../fonts/consolas.ttf");
+}
+
+html {
+	/* px 表示“像素（pixels）”: 基础字号为 10 像素 */
+	font-size: 20px;
+	background-color: #00539f;
+}
+
+body {
+	width: 50%;
+	margin: 0 auto;
+	background-color: #FF9500;
+	padding: 0 20px 20px 20px;
+	border: 3px solid black;
+}
+
+* {
+	font-family: 'consolas';
+}
+
+h1 {
+	font-family: Arial, "yan";
+	margin: 0;
+	padding: 20px 0;
+	color: #00539F;
+	text-shadow: 3px 3px 3px black;
+	font-size: 70px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'consolas', "yan";
+	font-size: 50px;
 }
 
 button {
+	font-family: 'consolas', "yan";
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
 	text-align: center;
@@ -30,39 +60,15 @@ button {
 	transition: all 0.2s;
 }
 
-html {
-	/* px 表示“像素（pixels）”: 基础字号为 10 像素 */
-	font-size: 20px;
-	background-color: #00539f;
-}
-
-body {
-	width: 50%;
-	margin: 0 auto;
-	background-color: #FF9500;
-	padding: 0 20px 20px 20px;
-	border: 3px solid black;
-}
-
-h1 {
-	font-family: Arial, "yan";
-	margin: 0;
-	padding: 20px 0;
-	color: #00539F;
-	text-shadow: 3px 3px 3px black;
-	font-size: 70px;
-	text-align: center;
+button:hover {
+	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
+	background: rgba(0, 256, 256, 0.5);
 }
 
 img {
 	display: block;
 	margin: 0 auto;
 	cursor: pointer;
-}
-
-h2 {
-	font-family: Arial, "yan";
-	font-size: 50px;
 }
 
 input {
@@ -79,10 +85,29 @@ input {
 
 input[type='submit'] {
 	cursor: pointer;
-	font-family: "georgia", "yan";
+	font-family: 'consolas', "yan";
 }
 
 input[type='submit']:hover {
 	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
 	background: rgba(0, 256, 256, 0.5);
+}
+
+
+#name {
+	font-family: 'consolas', '宋体';
+	position: fixed;
+	right: 3px;
+	top: 3px;
+	border: 0px solid rgba(0, 200, 0, 0.6);
+	background: rgba(0, 200, 0, 1);
+	box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+	color: black;
+	font-size: 20px;
+	transition: all 0.35s;
+}
+
+#name:hover {
+	box-shadow: 3px 3px 5px rgb(0, 0, 50);
+	background: #FF9500;
 }
