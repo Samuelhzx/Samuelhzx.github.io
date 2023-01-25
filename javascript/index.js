@@ -1,5 +1,5 @@
 //img
-let myImage = document.getElementById("huang-img");
+const myImage = document.getElementById("huang-img");
 
 myImage.onclick = function () {
 	let mySrc = myImage.getAttribute('src');
