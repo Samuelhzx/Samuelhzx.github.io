@@ -1,10 +1,17 @@
-.reply {
+.reply,
+.botreply {
     border: 2px solid rgba(0, 0, 200, 0.6);
     background: rgba(0, 0, 200, 0.3);
     box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
     border-radius: 10px;
     padding: 3px 10px;
     font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.reply {
+    float: right;
 }
 
 #bot {
@@ -39,4 +46,8 @@
 
 #write button:hover {
     background: rgba(0, 200, 0, 1);
+}
+
+p {
+    margin: 0;
 }
