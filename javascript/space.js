@@ -1,4 +1,4 @@
-const namebutton = document.getElementById("name");
+const namebutton = document.getElementById("rename");
 const title = document.getElementById('title');
 const htmltitle = document.querySelector('title');
 const removename = document.getElementById('removename');

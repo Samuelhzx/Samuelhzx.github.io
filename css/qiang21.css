@@ -33,6 +33,7 @@
     position: fixed;
     text-align: center;
     bottom: 10px;
+    /*width: fit-content;*/
 }
 
 #write button,

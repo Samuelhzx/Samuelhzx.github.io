@@ -14,8 +14,10 @@ myImage.onclick = function () {
 
 //name,denglu
 if (localStorage.getItem('name')) {
-	const title = document.getElementById('title');
 	let storedName = localStorage.getItem('name');
+	
+	const title = document.getElementById('title');
 	title.textContent = '欢迎回来，' + storedName;
-	namebutton.textContent = storedName;
+	const wode = document.getElementById('name');
+	wode.textContent = storedName;
 }
