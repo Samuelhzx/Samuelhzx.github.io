@@ -1,0 +1,42 @@
+.reply {
+    border: 2px solid rgba(0, 0, 200, 0.6);
+    background: rgba(0, 0, 200, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 30px;
+}
+
+#bot {
+    border: 2px solid rgba(0, 0, 200, 0.6);
+    background: rgba(0, 0, 200, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+    border-radius: 5px;
+    padding: 0px 10px;
+    overflow: auto;
+    height: 65%;
+}
+
+#write {
+    border: 2px solid rgba(0, 0, 200, 0.6);
+    background: rgba(0, 0, 255, 1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+    border-radius: 5px;
+    padding: 3px 10px;
+    position: fixed;
+    text-align: center;
+    bottom: 10px;
+}
+
+#write button,
+#write input {
+    background: rgba(0, 200, 200, 1);
+}
+
+#write input {
+    width: 200px;
+}
+
+#write button:hover {
+    background: rgba(0, 200, 0, 1);
+}
