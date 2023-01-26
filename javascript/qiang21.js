@@ -54,5 +54,7 @@ function submitFunction() {
         botSubmit.textContent = '我赢了';
         bot.appendChild(botNameDisplay);
         bot.appendChild(botSubmit);
+        qiangInput.disabled = true;
+        qiangSubmit.disabled = true;
     }
 }
