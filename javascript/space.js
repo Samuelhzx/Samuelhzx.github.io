@@ -5,7 +5,7 @@ const removename = document.getElementById('removename');
 
 htmltitle.textContent = '个人主页';
 
-namebutton.addEventListener('click', updateName);
+namebutton.onclick = updateName;
 
 function updateName() {
 	let name = prompt('输入昵称：');
@@ -25,7 +25,7 @@ if (localStorage.getItem('name')) {
 	htmltitle.textContent = storedName + '的个人主页';
 }
 
-removename.addEventListener('click', removeName);
+removename.onclick = removeName;
 
 function removeName() {
 	const ask = confirm('确定注销？')

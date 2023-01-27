@@ -3,7 +3,7 @@ const button = document.getElementById('submitRandpic');
 const replytext = document.getElementById('replytext');
 
 input.focus();
-button.addEventListener('click', reply);
+button.onclick = reply;
 
 function reply() {
 	//处理文本
