@@ -3,7 +3,7 @@ const qiangInput = document.getElementById('qiangInput');
 const botFirstReply = document.querySelector('.botreply');
 const bot = document.getElementById('bot');
 const jishu = document.getElementById('jishu');
-
+let wrong = 0;
 let num = 1;
 jishu.textContent = num;
 let playerName = '无名大侠';
@@ -17,6 +17,7 @@ qiangSubmit.addEventListener('click', submitFunction);
 
 function submitFunction() {
     let replynum = Number(qiangInput.value);
+
     let playerNameDisplay = document.createElement('p');
     let playerSubmit = document.createElement('p');
     playerSubmit.className = 'reply';
@@ -26,8 +27,7 @@ function submitFunction() {
     bot.appendChild(playerNameDisplay);
     bot.appendChild(playerSubmit);
 
-    let kong = document.createElement('br');
-    bot.appendChild(kong);
+    bot.innerHTML += '<br><br>'
 
     let botNameDisplay = document.createElement('p');
     let botSubmit = document.createElement('p');
@@ -42,7 +42,22 @@ function submitFunction() {
         num += botReplyNumber;
         jishu.textContent = num;
     } else {
-        botSubmit.textContent = '输入不符合规则';
+        wrong += 1;
+        if (wrong === 10) {
+            botSubmit.textContent = '再这样我不玩了';
+        } else if (wrong === 11) {
+            botSubmit.textContent = '我不玩了';
+            botSubmit.textContent = '再见';
+            qiangInput.disabled = true;
+            qiangSubmit.disabled = true;
+        } else if (Math.random() < 1 / 3) {
+            botSubmit.textContent = '输入不符合规则';
+        } else if (Math.random() < 1 / 2) {
+            botSubmit.textContent = '故意找茬是不是？';
+        } else {
+            botSubmit.textContent = '你玩不玩吧';
+        }
+
     }
     bot.appendChild(botSubmit);
 
