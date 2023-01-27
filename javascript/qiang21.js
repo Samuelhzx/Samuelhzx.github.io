@@ -57,4 +57,5 @@ function submitFunction() {
         qiangInput.disabled = true;
         qiangSubmit.disabled = true;
     }
+    bot.scrollTop = bot.scrollHeight;
 }
