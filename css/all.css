@@ -58,6 +58,7 @@ button {
 	color: black;
 	font-size: 30px;
 	transition: all 0.2s;
+	margin-bottom: 10px;
 }
 
 button:hover {
