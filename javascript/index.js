@@ -3,12 +3,12 @@ const myImage = document.getElementById("huang-img");
 
 myImage.onclick = function () {
 	let mySrc = myImage.getAttribute('src');
-	if (mySrc === '../images/ou.svg') {
-		myImage.setAttribute('src', '../images/yan.svg');
-	} else if (mySrc === '../images/yan.svg') {
-		myImage.setAttribute('src', '../images/liu.svg');
+	if (mySrc === '../media/ou.svg') {
+		myImage.setAttribute('src', '../media/yan.svg');
+	} else if (mySrc === '../media/yan.svg') {
+		myImage.setAttribute('src', '../media/liu.svg');
 	} else {
-		myImage.setAttribute('src', '../images/ou.svg');
+		myImage.setAttribute('src', '../media/ou.svg');
 	}
 }
 

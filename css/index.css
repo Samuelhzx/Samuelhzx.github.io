@@ -5,16 +5,6 @@ li {
 	/*letter-spacing: 1px;*/
 }
 
-.copyright {
-	text-align: center;
-	font-size: 1%;
-	/*这里有bug*/
-	position: fixed;
-	left: 0px;
-	bottom: 3px;
-	width: 100%;
-}
-
 #github {
 	position: fixed;
 	left: 3px;
