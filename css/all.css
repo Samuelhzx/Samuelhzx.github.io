@@ -14,12 +14,48 @@ html {
 	background-color: #00539f;
 }
 
+.selectPage {
+	margin: auto;
+	position: absolute;
+	height: fit-content;
+	border: 5px solid #FF9500;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 20px;
+}
+
 body {
+	border-radius: 10px;
 	width: 50%;
 	margin: 0 auto;
-	background-color: #FF9500;
-	padding: 0 20px 20px 20px;
-	border: 3px solid black;
+	background-color: blanchedalmond;
+	padding: 0 20px 0px 20px;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	/*设置动画播放次数*/
+	animation-fill-mode: forwards;
+	/*设置样式以在动画不播放时应用元素。forward是设置动画结束后，使用元素的结束属性值*/
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 * {
@@ -30,7 +66,7 @@ h1 {
 	font-family: Arial, "yan";
 	margin: 0;
 	padding: 20px 0;
-	color: #00539F;
+	color: #00539f;
 	text-shadow: 3px 3px 3px black;
 	font-size: 70px;
 	text-align: center;
@@ -46,11 +82,11 @@ button {
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
 	text-align: center;
-	border: 0px solid rgba(0, 0, 200, 0.6);
-	background: rgba(200, 200, 255, 1);
+	border: 0px solid rgb(203, 185, 158);
+	background: #1e1e1e;
 	/*rgba(0, 0, 200, 0.3);*/
-	/*color: rgba(0, 0, 200, 0.6);*/
-	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+	/*color: rgba(0, 0, 200, 0.6);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);*/
 	border-radius: 10px;
 	padding: 3px 10px;
 	/*字和框的间距*/
@@ -58,13 +94,15 @@ button {
 	cursor: pointer;
 	color: black;
 	font-size: 30px;
-	transition: all 0.3s;
+	transition: all 0.5s;
 	margin-bottom: 10px;
+	color: blanchedalmond;
 }
 
 button:hover {
-	box-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
-	background: rgba(0, 256, 256, 0.5);
+	box-shadow: 0px 3px 7px rgba(0, 255, 0, 1);
+	/*background: blanchedalmond;
+	color: #1e1e1e;*/
 }
 
 img {
@@ -122,4 +160,21 @@ input[type='submit']:hover {
 	left: 0px;
 	bottom: 3px;
 	width: 100%;
+	color: #FF9500;
 }
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	/*-webkit-box-shadow: inset 0 0 5px gray;*/
+	background: #FF9500;
+}
+
+/*::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 5px gray;
+	border-radius: 10px;
+	background: white;
+}*/

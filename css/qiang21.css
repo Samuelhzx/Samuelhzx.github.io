@@ -36,19 +36,20 @@
     /*width: fit-content;*/
 }
 
-#write button,
+
 #write input {
     background: rgba(0, 200, 200, 1);
+    margin-bottom: 0px;
 }
 
 #write input {
     width: 200px;
 }
-
+/*
 #write button:hover {
     background: rgba(0, 200, 0, 1);
 }
-
+*/
 p {
     margin: 0;
 }
