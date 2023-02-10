@@ -11,7 +11,7 @@
 html {
 	/* px 表示“像素（pixels）”: 基础字号为 10 像素 */
 	font-size: 20px;
-	background-color: #00539f;
+	background: linear-gradient(60deg, #00459f, #00659f);
 }
 
 .selectPage {
@@ -41,14 +41,14 @@ html {
 }
 
 body {
-	animation: fadeInAnimation ease 1s;
+	animation: fadeIn ease 1s;
 	animation-iteration-count: 1;
 	/*设置动画播放次数*/
 	animation-fill-mode: forwards;
 	/*设置样式以在动画不播放时应用元素。forward是设置动画结束后，使用元素的结束属性值*/
 }
 
-@keyframes fadeInAnimation {
+@keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
