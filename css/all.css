@@ -176,6 +176,7 @@ input[type='submit']:hover {
 
 ::-webkit-scrollbar {
 	width: 7px;
+	height: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -189,3 +190,11 @@ input[type='submit']:hover {
 	border-radius: 10px;
 	background: white;
 }*/
+
+#threebody {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
