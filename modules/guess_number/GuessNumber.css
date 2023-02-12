@@ -1,0 +1,8 @@
+.form input[type="number"] {
+	width: 200px;
+}
+
+.lastResult {
+	padding: 3px 3px;
+	border-radius: 5px;
+}

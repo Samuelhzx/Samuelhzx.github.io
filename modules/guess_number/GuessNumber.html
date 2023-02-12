@@ -1,0 +1,35 @@
+<link href="GuessNumber.css" rel="stylesheet">
+<link href="../../css/all.css" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>GuessNumber</title>
+	<link rel="shortcut icon" href="../../media/logo.svg">
+</head>
+
+<body>
+	<h2>猜数游戏</h2>
+
+	<p>We have selected a random integer between 1 and 100. See if you can guess it in 7 turns or fewer. We'll tell you
+		if your guess was too high or too low.</p>
+
+	<div class="form">
+		<label for="guessField">Enter a guess: </label>
+		<input type="number" min="1" max="100" class="guessField">
+		<input type="submit" value="Submit guess" class="guessSubmit">
+	</div>
+
+	<div class="resultParas">
+		<p class="guesses"></p>
+		<p class="lastResult"></p>
+		<p class="lowOrHi"></p>
+	</div>
+
+	<script src="GuessNumber.js" defer></script>
+	<script src="../../javascript/all.js" defer></script>
+</body>
+
+</html>

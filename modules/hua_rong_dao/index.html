@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>5x5数字华容道</title>
+		<style type="text/css">
+			.div1{
+				width:518px;
+				height: 518px;
+				background-color: #6C6C6C;
+			}
+			
+			.div2{
+				width:100px;
+				height: 100px;
+				float: left;
+				margin-left: 3px;
+				margin-top: 3px;
+				background-color: #FFA042;
+				text-align: center;
+				font-size: 80px;
+				color: #842B00;
+			}
+			
+			.div3{
+				margin-top: 20px;
+				width:512px;
+				height: 80px;
+				/*border: solid;*/
+				border-color: #000000;
+				text-align: center;
+				
+			}
+			
+			.buttonStyle{
+				width:150px;
+				height: 50px;
+				font-size: 30px;
+				margin-top: 15px;
+				border-radius: 5%;
+				background-color: #97CBFF;
+			}
+			
+			.timeText{
+				margin-left: 60px;
+				font-size: 30px;
+			}
+			
+			.inputStyle{
+				float: auto;
+				width:100px;
+				height: 30px;
+				font-size: 30px;
+			}
+		</style>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<div class="div3">
+			<span style="font-size: 50px;color: #D94600;" id="promptText">目标图案</span>
+		</div>
+		<div class="div1">
+			<div class="div2" id="index_0">1</div>
+			<div class="div2" id="index_1">2</div>
+			<div class="div2" id="index_2">3</div>
+			<div class="div2" id="index_3">4</div>
+			<div class="div2" id="index_4">5</div>
+			<div class="div2" id="index_5">6</div>
+			<div class="div2" id="index_6">7</div>
+			<div class="div2" id="index_7">8</div>
+			<div class="div2" id="index_8">9</div>
+			<div class="div2" id="index_9">10</div>
+			<div class="div2" id="index_10">11</div>
+			<div class="div2" id="index_11">12</div>
+			<div class="div2" id="index_12">13</div>
+			<div class="div2" id="index_13">14</div>
+			<div class="div2" id="index_14">15</div>
+			<div class="div2" id="index_15">16</div>
+			<div class="div2" id="index_16">17</div>
+			<div class="div2" id="index_17">18</div>
+			<div class="div2" id="index_18">19</div>
+			<div class="div2" id="index_19">20</div>
+			<div class="div2" id="index_20">21</div>
+			<div class="div2" id="index_21">22</div>
+			<div class="div2" id="index_22">23</div>
+			<div class="div2" id="index_23">24</div>
+			<div class="div2" style="background-color: #6C6C6C;" id="index_24"></div>
+		</div>
+		<div class="div3">
+			<button class="buttonStyle" id="startButton" name="button" value="StartButton">开始游戏</button>
+			<span class="timeText">时间</span>
+			<input class="inputStyle" type="text" name="outputTime" id="outputTime" value="" readonly="readonly" />
+			<span class="timeText" style="margin-left: 0px;">s</span>
+		</div>
+	</body>
+</html>
