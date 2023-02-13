@@ -1,6 +1,4 @@
 <link href="css/all.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
-
 
 <!DOCTYPE html>
 <html>
@@ -9,6 +7,20 @@
 	<meta charset="utf-8"><!-- name="viewport" content="width=device-width, initial-scale=1.0">-->
 	<title>Samuelhzx</title>
 	<link rel="shortcut icon" href="media/logo.svg">
+	<style>
+		#github {
+			position: fixed;
+			left: 3px;
+			top: 3px;
+		}
+
+		#getin {
+			display: block;
+			border-radius: 15px;
+			margin: 0 auto;
+			font-size: 40px;
+		}
+	</style>
 </head>
 
 <body style="overflow-x: hidden;overflow-y: hidden;">
@@ -17,21 +29,39 @@
 	<ul>
 		<li>I started to learn frontend on New Year's Day</li>
 	</ul>
-
 	<img id="github" src="media/github.svg" alt="samuelhzx" height=40px
 		onclick="window.open('https://github.com/Samuelhzx')">
-
-	<!--button id="name" onclick="window.open('space.html')">我的</button-->
-
 	<button id="getin" onclick="window.open('center.html')">进入</button>
-
 	<img id="huang-img" src="media/ou.svg" alt="samuelhzx" height=200px>
-
 	<p class="copyright">Copyright © 2023 Samuelhzx. All rights reserved.</p>
 
-	<script src="javascript/index.js" defer></script>
-
 	<script src="javascript/all.js" defer></script>
+
+	<script>
+		//img
+		const myImage = document.getElementById("huang-img");
+
+		myImage.onclick = function () {
+			let mySrc = myImage.getAttribute('src');
+			if (mySrc === 'media/ou.svg') {
+				myImage.setAttribute('src', 'media/yan.svg');
+			} else if (mySrc === 'media/yan.svg') {
+				myImage.setAttribute('src', 'media/liu.svg');
+			} else {
+				myImage.setAttribute('src', 'media/ou.svg');
+			}
+		}
+
+		//name,denglu
+		if (localStorage.getItem('name')) {
+			let storedName = localStorage.getItem('name');
+
+			const title = document.getElementById('title');
+			title.textContent = '欢迎回来，' + storedName;
+			const wode = document.getElementById('name');
+			wode.textContent = storedName;
+		}
+	</script>
 </body>
 
 </html>
