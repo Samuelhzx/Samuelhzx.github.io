@@ -1,3 +1,15 @@
+:root {
+	--select-text-bg-color: #B5D6FC;
+	/**/
+	--select-text-font-color: auto;
+	/**/
+	--defalt-font: 'consolas', "yan";
+	--defalt-body-bgc: blanchedalmond;
+	--deep-blue: #00459f;
+	--orange: #FF9500;
+}
+
+
 @font-face {
 	font-family: "yan";
 	src: url("../fonts/颜真卿颜体.ttf");
@@ -11,14 +23,14 @@
 html {
 	/* px 表示“像素（pixels）”: 基础字号为 10 像素 */
 	font-size: 20px;
-	background: linear-gradient(60deg, #00459f, #00659f);
+	background: linear-gradient(60deg, var(--deep-blue), #00659f);
 }
 
 .selectPage {
 	margin: auto;
 	position: absolute;
 	height: fit-content;
-	border: 5px solid #FF9500;
+	border: 5px solid var(--orange);
 
 	top: 0;
 	bottom: 0;
@@ -31,7 +43,7 @@ body {
 	border-radius: 10px;
 	width: 50%;
 	margin: 0 auto;
-	background-color: blanchedalmond;
+	background-color: var(--defalt-body-bgc);
 	padding: 0 20px 0px 20px;
 }
 
@@ -48,16 +60,6 @@ body {
 	/*设置样式以在动画不播放时应用元素。forward是设置动画结束后，使用元素的结束属性值*/
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 * {
 	font-family: 'consolas';
 }
@@ -66,14 +68,14 @@ h1 {
 	font-family: Arial, "yan";
 	margin: 0;
 	padding: 20px 0;
-	color: #00539f;
+	color: var(--deep-blue);
 	text-shadow: 3px 3px 3px black;
 	font-size: 70px;
 	text-align: center;
 }
 
 h2 {
-	font-family: 'consolas', "yan";
+	font-family: var(--defalt-font);
 	font-size: 50px;
 }
 
@@ -86,21 +88,17 @@ li {
 
 
 button {
-	font-family: 'consolas', "yan";
+	font-family: var(--defalt-font);
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
 	text-align: center;
 	border: 0px solid rgb(203, 185, 158);
-	background: #1e1e1e;
-	/*rgba(0, 0, 200, 0.3);*/
-	/*color: rgba(0, 0, 200, 0.6);
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);*/
+	background: #111122;
 	border-radius: 10px;
 	padding: 3px 10px;
 	/*字和框的间距*/
 	display: inline-block;
 	cursor: pointer;
-	color: black;
 	font-size: 30px;
 	transition: all 0.5s;
 	margin-bottom: 10px;
@@ -109,8 +107,6 @@ button {
 
 button:hover {
 	box-shadow: 0px 3px 7px rgba(0, 255, 0, 1);
-	/*background: blanchedalmond;
-	color: #1e1e1e;*/
 }
 
 img {
@@ -133,32 +129,13 @@ input {
 
 input[type='submit'] {
 	cursor: pointer;
-	font-family: 'consolas', "yan";
+	font-family: var(--defalt-font);
 }
 
 input[type='submit']:hover {
 	box-shadow: 3px 3px 5px rgba(0, 0, 50, 1);
 	background: rgba(0, 256, 256, 0.5);
 }
-
-/*
-#name {
-	font-family: 'consolas', '宋体';
-	position: fixed;
-	right: 3px;
-	top: 3px;
-	border: 0px solid rgba(0, 200, 0, 0.6);
-	background: rgba(0, 200, 0, 1);
-	box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
-	color: black;
-	font-size: 20px;
-	transition: all 0.35s;
-}
-
-#name:hover {
-	box-shadow: 3px 3px 5px rgb(0, 0, 50);
-	background: #FF9500;
-}*/
 
 .copyright {
 	text-align: center;
@@ -171,7 +148,7 @@ input[type='submit']:hover {
 }
 
 .selectPage .copyright {
-	color: #FF9500;
+	color: var(--orange);
 }
 
 ::-webkit-scrollbar {
@@ -182,7 +159,7 @@ input[type='submit']:hover {
 ::-webkit-scrollbar-thumb {
 	border-radius: 3px;
 	/*-webkit-box-shadow: inset 0 0 5px gray;*/
-	background: #FF9500;
+	background: var(--orange);
 }
 
 /*::-webkit-scrollbar-track{
@@ -197,4 +174,14 @@ input[type='submit']:hover {
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
