@@ -3,11 +3,16 @@ if (localStorage.getItem('bbgc')) {
     body.style.backgroundColor = localStorage.getItem('bbgc');
 }
 
+const btn = document.querySelectorAll('button');
+for (let butn of btn) {
+    butn.onmousedown=()=>butn.style.borderColor='#000 var(--rice-white) var(--rice-white) #000';
+    butn.onmouseup=()=>butn.style.borderColor='var(--rice-white) #000 #000 var(--rice-white)';
+}
 
 // Set up the canvas
 var canvas = document.getElementById("threebody");
 if (canvas) {
-    let dt = 0.000002;
+    let dt = 0.00000003;
     let wid = window.innerWidth;
     let hei = window.innerHeight;
     canvas.width = wid
@@ -113,7 +118,7 @@ if (canvas) {
     }
     // Main loop
     function loop() {
-        for (i=0; i<10000; i++) {
+        for (i = 0; i < 100000; i++) {
             calculateForces();
             updatePositions();
         }

@@ -7,6 +7,7 @@
 	--defalt-body-bgc: blanchedalmond;
 	--deep-blue: #00459f;
 	--orange: #FF9500;
+	--rice-white: #dfdfdf;
 }
 
 
@@ -87,22 +88,25 @@ li {
 }
 
 
+
 button {
 	font-family: var(--defalt-font);
 	letter-spacing: 1px;
-	/*text-transform: uppercase;*/
 	text-align: center;
-	border: 0px solid rgb(203, 185, 158);
-	background: #111122;
-	border-radius: 10px;
 	padding: 3px 10px;
-	/*字和框的间距*/
 	display: inline-block;
 	cursor: pointer;
 	font-size: 30px;
-	transition: all 0.5s;
+	transition: box-shadow 0.5s;
 	margin-bottom: 10px;
-	color: blanchedalmond;
+	width: fit-content;
+	height: fit-content;
+	background-color: var(--deep-blue);
+	color: var(--orange);
+	border: 3px solid;
+	border-color: var(--rice-white) #000 #000 var(--rice-white);
+	left: -3px;
+	top: -3px;
 }
 
 button:hover {
