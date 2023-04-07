@@ -14,22 +14,17 @@
 		}
 
 		#getin {
+			position: fixed;
 			display: block;
-			border-radius: 15px;
-			margin: 0 auto;
-			font-size: 40px;
-			font-family: var(--defalt-font);
-			letter-spacing: 1px;
-			/*text-transform: uppercase;*/
-			text-align: center;
-			border: 0px solid rgb(203, 185, 158);
-			background: #111122;
-			padding: 3px 10px;
-			/*字和框的间距*/
+			font-size: 15px;
+			right: 3px;
+			top: 3px;
+			color: #111122;
 			cursor: pointer;
-			transition: all 0.5s;
-			margin-bottom: 10px;
-			color: blanchedalmond;
+		}
+
+		#getin:hover {
+			color: #252540;
 		}
 	</style>
 </head>
@@ -42,7 +37,7 @@
 	</ul>
 	<img id="github" src="media/github.svg" alt="samuelhzx" height=40px
 		onclick="window.open('https://github.com/Samuelhzx')">
-	<button id="getin" onclick="window.open('center.html')">功能中心</button>
+	<div id="getin" onclick="window.open('center.html')">功能中心</div>
 	<img id="huang-img" src="media/ou.svg" alt="samuelhzx" height=200px>
 	<p class="copyright">Copyright © 2023 Samuelhzx. All rights reserved.</p>
 
