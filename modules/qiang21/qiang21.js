@@ -6,10 +6,10 @@ const jishu = document.getElementById('jishu');
 let wrong = 0;
 let num = 1;
 jishu.textContent = num;
-let playerName = '无名大侠';
-if (localStorage.getItem('name')) {
-    playerName = localStorage.getItem('name');
-}
+let playerName = 'me';
+//if (localStorage.getItem('name')) {
+//    playerName = localStorage.getItem('name');
+//}
 //playerName += ':'
 
 botFirstReply.textContent = '我先说，1';

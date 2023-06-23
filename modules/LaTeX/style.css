@@ -1,16 +1,55 @@
 html {
-    background-color:blanchedalmond ;
+	background-color: blanchedalmond;
+}
+
+.output,
+textarea {
+	border-radius: 5px;
+	margin: 0;
 }
 
 .output {
-    border: 1px solid;
-    min-height: 20%;
-    letter-spacing: 0.5px;
+	border: 1px solid;
+	min-height: 20%;
+	letter-spacing: 0.5px;
 }
 
 textarea {
-    letter-spacing: 0.5px;
-    font-size: 20px;
-    width: calc(100% - 6px);
-    resize: vertical;
+	letter-spacing: 0.5px;
+	font-size: 20px;
+	width: calc(100% - 6px);
+	resize: vertical;
+}
+
+.display {
+	border: 1px solid;
+	border-radius: 5px;
+	height: 100px;
+	margin-bottom: 5px;
+}
+
+.tools {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5%;
+}
+
+.symbols,
+.fractions,
+.derivative,
+.mod,
+.subscript,
+.big,
+.brackets {
+	cursor: pointer;
+}
+
+.symbols:hover,
+.fractions:hover,
+.derivative:hover,
+.mod:hover,
+.subscript:hover,
+.big:hover,
+.brackets:hover {
+	color: #235ff9;
 }

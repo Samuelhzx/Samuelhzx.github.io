@@ -12,10 +12,13 @@ $('textarea').on('keyup', () => {
 	let input = document.querySelector('textarea').value;
 	if (input !== "") {
 		o.innerText = input;
+		mathjaxfy(input);
 	} else {
 		o.innerText = '输出区域';
+		$('.mathjaxed').text('\\(\\text{Powered by}\\) ');
+		$('.mathjaxed').append('<a href="https://www.osgeo.cn/mathjax/" target="_blank">\\(\\text{Mathjax}\\)</a>')
+		MathJax.typeset();
 	}
-	mathjaxfy(input);
 })
 
 function mathjaxfy(text) {
